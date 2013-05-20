@@ -4,7 +4,7 @@ if (Meteor.isClient) {
   };
 
   Template.hello.events({
-    'tap .test' : function () {
+    'tap .test' : function (template,event) {
       // template data, if any, is available in 'this'
       $(".click").append("<li>tap Fired</li>");
     }
